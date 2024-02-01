@@ -20,5 +20,4 @@ for i in quest:
         e=e+1
 print("Total: ",d)
 print("Incorrect: ",e)
-    
 

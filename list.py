@@ -13,9 +13,7 @@ for i in range(user_input):
         r=input("Enter new task: ")
         list_n.append(r)
         break
-
 if(u_d==remove):
         r=input("Enter which task?")
         list_n.remove(r)
-   
 print(list_n)
