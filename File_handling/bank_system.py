@@ -56,8 +56,18 @@ def viewaccount(user):
     users=read_data()
     amount=users[user]['balance']
     print(f"User Name: {user}\nBalance: {amount}")
-    # user_edit=input("1.Edit profile")
-    # if(user_edit=='1'):
+    user_edit=input("1.Edit profile\t2.Exit")
+    if(user_edit=='1'):
+        user_n=input("Enter new username: ")
+        users[user_n]=users.pop(user)
+        print("Successfully updated.")
+        write_data(users)
+        return 'success'
+    elif(user_edit=='2'):
+        return
+    else:
+        print("Cannot Update!!")
+
 
 def main():
     while True:
@@ -78,7 +88,9 @@ def main():
                     elif(user_choice=='2'):
                         withdraw(user)
                     elif(user_choice=='3'):
-                        viewaccount(user)
+                        response=viewaccount(user)
+                        if(response=='success'):
+                            break
                     elif(user_choice=='4'):
                         break
                     else:
@@ -88,6 +100,6 @@ def main():
             break
         else:
             print("Enter correct number")
-        return
+        
 
 main()

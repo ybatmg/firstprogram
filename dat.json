@@ -1,1 +1,6 @@
-"Laxman"
+{
+    "Pemba": {
+        "password": "1234",
+        "balance": 0
+    }
+}
