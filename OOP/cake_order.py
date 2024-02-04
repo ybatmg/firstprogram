@@ -8,9 +8,6 @@ parsedData=[]
 cakefile='cakefile.json'
 
 
-
-
-
 # def read_data():
 #         if not os.path.exists(cakefile):
 #             return []
