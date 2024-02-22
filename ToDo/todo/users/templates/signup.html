@@ -9,29 +9,22 @@
     <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
         <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
             <h1 class="mb-8 text-3xl text-center">Sign up</h1>
-            <input 
-                type="text"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="username"
-                placeholder="User name" />
-
-            <input 
-                type="text"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="email"
-                placeholder="Email" />
-
-            <input 
-                type="password"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="password"
-                placeholder="Password" />
-            <input 
-                type="password"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="confirm_password"
-                placeholder="Confirm Password" />
-
+            <label class="font-bold">{{signup_form.username.label_tag}}</label>
+            <label class="block border border-grey-light w-full p-3 rounded mb-4">
+                {{signup_form.username}}
+            </label>
+            <label class="font-bold">{{signup_form.email.label_tag}}</label>
+            <label class="block border border-grey-light w-full p-3 rounded mb-4">
+                {{signup_form.email}}
+            </label>
+            <label class="font-bold">{{signup_form.password1.label_tag}}</label>
+            <label class="block border border-grey-light w-full p-3 rounded mb-4">
+                {{signup_form.password1}}
+            </label>
+            <label class="font-bold">{{signup_form.password2.label_tag}}</label>
+            <label class="block border border-grey-light w-full p-3 rounded mb-4">
+                {{signup_form.password2}}
+            </label>
             <button
                 type="submit"
                 class="w-full text-center py-3 rounded border-2 bg-cyan-600 text-white hover:bg-cyan-500 focus:outline-none my-1"
